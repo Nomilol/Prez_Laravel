@@ -19,7 +19,7 @@ Route::post('twoots', function(){
         'text' => request()-> text 
     ]);
 
-    return redirect()->to('Twoot');
+    return redirect()->to('/');
 });
 
 Route::delete('twoots/{id}', function($id){
