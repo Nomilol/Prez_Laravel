@@ -15,16 +15,16 @@ Route::get('/about', function(){
 });
 
 Route::post('twoots', function(){
-//    Twoot::______([
-//        'text' => request()->____
-//    ]);
-//
-//    return redirect()->to('_');
+    Twoot::create([
+        'text' => request()-> text 
+    ]);
+
+    return redirect()->to('Twoot');
 });
 
 Route::delete('twoots/{id}', function($id){
 //    Trouver le twoot, puis le supprimer
-//    Twoot::____($id)->______();
+    Twoot::find($id)->delete();
 
     return redirect()->to('/');
 });
